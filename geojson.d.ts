@@ -8,7 +8,7 @@ export interface InvalidGeometryError extends Error {
 export type Geoms = 'Point' | 'MultiPoint' | 'LineString' | 'MultiLineString' | 'Polygon' | 'MultiPolygon' | 'GeoJSON'
 
 export interface GeomsParams extends Partial<Record<Geoms, string>> {
-    Point?: string
+    Point?: string | string[]
 }
 
 export type Data = { [key: string]: any } | any[]
