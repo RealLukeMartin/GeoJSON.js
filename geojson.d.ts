@@ -1,4 +1,4 @@
-import {FeatureCollection, Feature, Geometry} from 'geojson'
+import {FeatureCollection, Feature, Geometry} from '@types/geojson'
 
 export interface InvalidGeometryError extends Error {
     item: any;
@@ -40,4 +40,4 @@ export interface GEOJSON {
 
 export const GeoJSON: GEOJSON;
 export default GeoJSON;
-export * from "geojson"
+export * from "@types/geojson"
